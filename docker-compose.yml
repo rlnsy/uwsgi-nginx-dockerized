@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+    uwsgi:
+        build: ./app
+        volumes:
+            - ./tmp:/tmp
+    nginx:
+        build: ./server
+        depends_on:
+            - "uwsgi"
+        volumes:
+            - ./tmp:/tmp
+            - ./server/logs:/var/log/nginx
+        ports:
+            - "80:80"

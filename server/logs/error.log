@@ -1,0 +1,6 @@
+2020/05/23 23:40:30 [emerg] 1#1: unexpected ";" in /etc/nginx/nginx.conf:27
+2020/05/23 23:43:11 [emerg] 1#1: unexpected ";" in /etc/nginx/nginx.conf:27
+2020/05/23 23:44:02 [emerg] 1#1: unexpected ";" in /etc/nginx/nginx.conf:38
+2020/05/23 23:50:15 [error] 6#6: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.48.1, server: 127.0.0.1, request: "GET / HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "localhost"
+2020/05/23 23:57:46 [error] 6#6: *1 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 192.168.80.1, server: 127.0.0.1, request: "GET / HTTP/1.1", upstream: "uwsgi://192.168.80.2:8001", host: "localhost"
+2020/05/24 00:01:29 [error] 7#7: *1 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 192.168.96.1, server: nginx, request: "GET / HTTP/1.1", upstream: "uwsgi://192.168.96.2:8001", host: "localhost"
